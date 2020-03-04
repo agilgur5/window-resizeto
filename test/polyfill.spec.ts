@@ -1,4 +1,4 @@
-import { describe, it, expect } from 'jest-without-globals'
+import { describe, it, expect, jest } from 'jest-without-globals'
 
 import '../src/polyfill'
 
@@ -15,5 +15,13 @@ describe('window resize polyfill', () => {
 
     expect({ width: window.outerWidth, height: window.outerHeight })
       .toMatchObject(dimF2)
+  })
+
+  it('should fire an event', () => {
+    const resizeHandler = jest.fn()
+    window.addEventListener('resize', resizeHandler)
+    window.resizeTo(dimF1.width, dimF1.height)
+
+    expect(resizeHandler).toBeCalled()
   })
 })
