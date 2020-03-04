@@ -1,0 +1,58 @@
+{
+  "name": "window-resizeTo",
+  "version": "0.0.0",
+  "description": "A window.resizeTo polyfill for test environments like Jest & JSDOM",
+  "main": "dist/index.js",
+  "module": "dist/window-resizeTo.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "src/",
+    "dist/"
+  ],
+  "author": "Anton Gilgur",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/agilgur5/window-resizeTo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agilgur5/window-resizeTo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/agilgur5/window-resizeTo/issues"
+  },
+  "keywords": [
+    "window",
+    "resizeTo",
+    "resize",
+    "polyfill",
+    "ponyfill",
+    "jsdom",
+    "jest",
+    "test",
+    "testing"
+  ],
+  "scripts": {
+    "lint": "tsdx lint '**/*.ts'",
+    "lint:fix": "npm run lint -- --fix",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "test:pub": "npm run build && npm pack",
+    "pub": "npm run build && npm publish",
+    "changelog": "changelog-maker"
+  },
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {
+    "@agilgur5/changelog-maker": "^3.0.0",
+    "@babel/core": "^7.8.4",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-standard-with-typescript": "^12.0.1",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest-without-globals": "^0.0.3",
+    "tsdx": "^0.12.3"
+  }
+}
