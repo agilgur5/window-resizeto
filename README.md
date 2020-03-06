@@ -3,7 +3,7 @@
 <!-- releases / versioning -->
 [![package-json](https://img.shields.io/github/package-json/v/agilgur5/window-resizeto.svg)](https://npmjs.org/package/window-resizeto)
 [![releases](https://img.shields.io/github/tag-pre/agilgur5/window-resizeto.svg)](https://github.com/agilgur5/window-resizeto/releases)
-[![commits](https://img.shields.io/github/commits-since/agilgur5/window-resizeto/v1.0.3.svg)](https://github.com/agilgur5/window-resizeto/commits/master)
+[![commits](https://img.shields.io/github/commits-since/agilgur5/window-resizeto/latest.svg)](https://github.com/agilgur5/window-resizeto/commits/master)
 <br><!-- downloads -->
 [![dt](https://img.shields.io/npm/dt/window-resizeto.svg)](https://npmjs.org/package/window-resizeto)
 [![dy](https://img.shields.io/npm/dy/window-resizeto.svg)](https://npmjs.org/package/window-resizeto)
