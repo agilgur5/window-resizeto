@@ -38,6 +38,11 @@ There are a few different ways you can use `window-resizeTo`:
   }
   ```
 
+  ```javascript
+  // some-test.spec.js
+  window.resizeTo(500, 500)
+  // window is now resize to 500x500
+  ```
 
 - Standalone with the polyfill:
 
