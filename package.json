@@ -12,13 +12,13 @@
   ],
   "author": "Anton Gilgur",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/agilgur5/window-resizeTo",
+  "homepage": "https://github.com/agilgur5/window-resizeto",
   "repository": {
     "type": "git",
-    "url": "https://github.com/agilgur5/window-resizeTo.git"
+    "url": "https://github.com/agilgur5/window-resizeto.git"
   },
   "bugs": {
-    "url": "https://github.com/agilgur5/window-resizeTo/issues"
+    "url": "https://github.com/agilgur5/window-resizeto/issues"
   },
   "keywords": [
     "window",
