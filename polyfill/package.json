@@ -1,0 +1,5 @@
+{
+  "main": "../dist/polyfill.js",
+  "module": "../dist/polyfill.esm.js",
+  "typings": "../dist/polyfill.d.ts"
+}

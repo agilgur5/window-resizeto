@@ -3,11 +3,12 @@
   "version": "0.0.0",
   "description": "A window.resizeTo polyfill for test environments like Jest & JSDOM",
   "main": "dist/index.js",
-  "module": "dist/window-resizeTo.esm.js",
+  "module": "dist/index.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "src/",
-    "dist/"
+    "dist/",
+    "polyfill/"
   ],
   "author": "Anton Gilgur",
   "license": "Apache-2.0",
@@ -33,7 +34,7 @@
   "scripts": {
     "lint": "tsdx lint '**/*.ts'",
     "lint:fix": "npm run lint -- --fix",
-    "build": "tsdx build",
+    "build": "tsdx build --entry src/index.ts --entry src/polyfill.ts",
     "test": "tsdx test",
     "test:pub": "npm run build && npm pack",
     "pub": "npm run build && npm publish",
@@ -53,6 +54,6 @@
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-standard": "^4.0.1",
     "jest-without-globals": "^0.0.3",
-    "tsdx": "^0.12.3"
+    "tsdx": "github:agilgur5/tsdx#dist-multi"
   }
 }
