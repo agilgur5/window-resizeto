@@ -1,5 +1,5 @@
 {
-  "name": "window-resizeTo",
+  "name": "window-resizeto",
   "version": "0.0.0",
   "description": "A window.resizeTo polyfill for test environments like Jest & JSDOM",
   "main": "dist/index.js",
