@@ -24,35 +24,38 @@ A [`window.resizeTo`](https://developer.mozilla.org/en-US/docs/Web/API/Window/re
 
 ## Usage
 
-With Jest:
+There are a few different ways you can use `window-resizeTo`:
 
-```javascript
-// jest.config.js
-module.exports = {
-  setupFilesAfterEnv: [
-    // polyfill window.resizeTo
-    'window-resizeTo/polyfill'
-  ]
-}
-```
+- With Jest:
 
-Standalone with the polyfill:
+  ```javascript
+  // jest.config.js
+  module.exports = {
+    setupFilesAfterEnv: [
+      // polyfill window.resizeTo
+      'window-resizeTo/polyfill'
+    ]
+  }
+  ```
 
-```javascript
-import 'window-resizeTo/polyfill'
 
-window.resizeTo(500, 500)
-// window is now resized to 500x500
-```
+- Standalone with the polyfill:
 
-With the ponyfill:
+  ```javascript
+  import 'window-resizeTo/polyfill'
 
-```javascript
-import { resizeTo } from 'window-resizeTo'
+  window.resizeTo(500, 500)
+  // window is now resized to 500x500
+  ```
 
-resizeTo(window, 500, 500)
-// window is now resized to 500x500
-```
+- With the ponyfill:
+
+  ```javascript
+  import { resizeTo } from 'window-resizeTo'
+
+  resizeTo(window, 500, 500)
+  // window is now resized to 500x500
+  ```
 
 ## How it works
 
