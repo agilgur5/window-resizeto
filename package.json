@@ -1,6 +1,6 @@
 {
   "name": "window-resizeto",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A window.resizeTo polyfill for test environments like Jest & JSDOM",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
